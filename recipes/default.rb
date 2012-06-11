@@ -1,11 +1,7 @@
 packages = Array.new
 
 case node[:lsb][:codename]
-when "lucid"
-  packages |= %w/
-    libsasl2-2
-  /
-when "precise"
+when "lucid", "precise"
   packages |= %w/
     libsasl2-2
   /
